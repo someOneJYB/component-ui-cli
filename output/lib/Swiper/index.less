@@ -1,0 +1,45 @@
+@import '../Style/common';
+div {
+  //background-image: url("./1.png");
+}
+.drag-line {
+  position: relative;
+  width: 100px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #ccc;
+  margin: 20px;
+  .line-color {
+    height: 5px;
+    position: absolute;
+    left: 0;
+    border-radius: 2px;
+    background-color: deepskyblue;
+    bottom: 0;
+  }
+  .line-col {
+    width: 5px;
+  }
+  .bag-row{
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+  .bag {
+    position: absolute;
+    width: 10px;
+    transition: transform 0.1s ease-in-out;
+    background-color: deepskyblue;
+    height: 10px;
+    border-radius: 50%;
+  }
+  .bag-col{
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.col {
+  height: 100px;
+  width: 5px;
+}
